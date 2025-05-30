@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Guess the Number Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>🎲 Guess the Number Game 🎯</h1>
+  <p>Enter a number between 1 and 100:</p>
+  <input type="number" id="guessInput" min="1" max="100" />
+  <div class="buttons">
+    <button type="button" onclick="makeGuess()">Submit Guess</button>
+    <button type="button" onclick="resetGame()">🔄 Restart Game</button>
+  </div>
+  <p id="result"></p>
+  <p id="attempts"></p>
+
+  <!-- 👇 This must be at the end of body -->
+  <script src="gs.js"></script>
+</body>
+</html>
